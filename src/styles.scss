@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import './src/property.scss';
+@import './src/animation.scss';
+
+body{
+    background: #ccc url("./img/254-536x354.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color:#ccc;
+    padding: calc(100% / 10);
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    background-color: $background-color;
+    padding: 1em;
+    border-radius: $border-radius;
+    & strong{
+        font-weight: 500;
+        color:black;
+    }
+}
+
+div{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+h1 {
+    color: $background-color;
+    font-family: cursive;
+    font-size: 300%;
+    animation:demo 2s infinite;
+}
+
+h2{
+    color: $background-color;
+    font-family: cursive;
+    font-size: 150%;
+}
+
+.primary-Button{
+    background-color: $background-color;
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
+    color: $font-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    margin: $margin;
+    padding: $padding;
+    cursor:pointer;
+    transition: 0.5s all;
+    &:hover{
+        background-color: $font-color;
+        color: $background-color;
+    }
+}
+  
+
+
+@media screen and (max-width: 600px) {
+  h2 {
+      font-size: 100%;
+  }
+}
